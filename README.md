@@ -16,7 +16,12 @@ Open the landing page, review the dashboard, then use **Konfirmasi Minggu Ini** 
 
 ## Readiness status
 
-This repository is in hackathon readiness hardening. Mock XDR and simulated settlement are disabled on public network configuration. No mainnet deployment is claimed.
+This repository has a live Soroban contract on Stellar mainnet. The verified deployment
+and initialization records are in [`contracts/round-up-savings/deployment.json`](contracts/round-up-savings/deployment.json).
+The first functional mainnet call created batch `290291` for `0.1 XLM`; its transaction
+is recorded in the same manifest. The public UI remains a lightweight `DEMO_MODE` demo,
+while deposit, approval, and withdrawal are deliberately prepared as unsigned XDR for
+an external wallet signer.
 
 See [`docs/MAINNET_READINESS.md`](docs/MAINNET_READINESS.md).
 
@@ -26,7 +31,8 @@ Use disposable testnet accounts, configure local environment variables, and foll
 
 ## Mainnet gate
 
-Mainnet requires a deployed contract, reviewed batch manifest, wallet signatures, exact Horizon/Soroban reconciliation, expiry handling, and idempotency.
+Mainnet requires a deployed contract, reviewed batch manifest, wallet signatures, exact Horizon/Soroban reconciliation, expiry handling, and idempotency. The deployed contract and
+initialization are complete; the next functional actions are `deposit -> approve -> withdraw`.
 
 ## Soroban MVP artifact
 
@@ -40,5 +46,6 @@ deploy and initialize.
 The minimal contract in `contracts/round-up-savings/` implements
 `OPEN -> DEPOSITED -> APPROVED -> WITHDRAWN` with native XLM SAC custody. Run
 `cargo test --manifest-path contracts/round-up-savings/Cargo.toml` and use
-[`docs/MAD_OPS.md`](docs/MAD_OPS.md) to prepare unsigned XDR. Deployment IDs
-remain empty in `contracts/round-up-savings/deployment.json` until verified.
+[`docs/MAD_OPS.md`](docs/MAD_OPS.md) to prepare unsigned XDR. Deployment IDs and
+verified mainnet transaction hashes are recorded in
+`contracts/round-up-savings/deployment.json`.
