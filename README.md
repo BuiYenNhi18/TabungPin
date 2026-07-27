@@ -27,3 +27,18 @@ Use disposable testnet accounts, configure local environment variables, and foll
 ## Mainnet gate
 
 Mainnet requires a deployed contract, reviewed batch manifest, wallet signatures, exact Horizon/Soroban reconciliation, expiry handling, and idempotency.
+
+## Soroban MVP artifact
+
+The minimal Commitment/Vault contract is in [`contracts/vault/`](contracts/vault/).
+Run `cargo test --manifest-path contracts/vault/Cargo.toml`. Its deployment
+manifest remains `not-deployed` until an external signer completes upload,
+deploy and initialize.
+
+## Soroban XLM surface
+
+The minimal contract in `contracts/round-up-savings/` implements
+`OPEN -> DEPOSITED -> APPROVED -> WITHDRAWN` with native XLM SAC custody. Run
+`cargo test --manifest-path contracts/round-up-savings/Cargo.toml` and use
+[`docs/MAD_OPS.md`](docs/MAD_OPS.md) to prepare unsigned XDR. Deployment IDs
+remain empty in `contracts/round-up-savings/deployment.json` until verified.

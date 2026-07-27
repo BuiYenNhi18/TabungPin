@@ -9,11 +9,11 @@ This app intends to batch weekly round-ups into a DeFindex/Soroban vault after e
 - Stellar SDK, Horizon configuration, and testnet/public USDC issuer settings exist.
 - `src/server/service/savings.service.ts` changes tally and vault rows in Postgres without a chain confirmation; the vault address and XDR are explicitly simulated/mock values.
 - The app and seed script insert synthetic Horizon transaction identifiers; the UI also has demo fallback events.
-- No Soroban/DeFindex contract source, build artifact, deployment manifest, verified vault/contract IDs, or verified mainnet transaction evidence is present in this copy.
+- The repository now contains local-tested Soroban XLM artifacts under `contracts/round-up-savings/` and `contracts/vault/`; no verified Testnet/Mainnet deployment or transaction evidence is present.
 
 ## Missing IDs and artifacts
 
-- DeFindex vault and share-contract deployment IDs: missing.
+- DeFindex vault/share-contract IDs and the native-XLM MVP deployment IDs: missing.
 - Mainnet asset/strategy configuration and verified wallet-signing/submission flow: missing.
 - Horizon event correlation and reconciliation for deposits/redemptions: missing.
 
@@ -25,3 +25,9 @@ This app intends to batch weekly round-ups into a DeFindex/Soroban vault after e
 4. Keep demo seed/API paths disabled on public network until those controls pass review.
 
 Mainnet deposit confirmation is fail-closed in this copy; the demo seed is testnet-only.
+
+## Contract work in this revision
+
+`contracts/round-up-savings/` adds a local-tested native-XLM SAC contract and
+an unsigned-XDR helper. Testnet and Mainnet remain `not-deployed`; no secret
+key or broadcast is involved.

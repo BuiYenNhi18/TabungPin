@@ -9,3 +9,6 @@ coverage/
 drizzle/
 *.tsbuildinfo
 .vercel
+.mad-ops/
+contracts/**/target/
+contracts/**/Cargo.lock
