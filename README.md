@@ -32,8 +32,9 @@ Use disposable testnet accounts, configure local environment variables, and foll
 
 ## Mainnet gate
 
-Mainnet requires a deployed contract, reviewed batch manifest, wallet signatures, exact Horizon/Soroban reconciliation, expiry handling, and idempotency. The deployed contract and
-initialization are complete; the next functional actions are `deposit -> approve -> withdraw`.
+Mainnet requires a deployed contract, reviewed batch manifest, wallet signatures, exact Horizon/Soroban reconciliation, expiry handling, and idempotency. The deployed contract,
+initialization, batch creation, deposit, and approval are verified; `withdraw` remains the
+final optional close-out action for the demo batch.
 
 ## Soroban MVP artifact
 
