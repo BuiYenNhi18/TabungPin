@@ -3,7 +3,7 @@
   "contractName": "tabungpin-round-up-savings-contract",
   "sdkVersion": "27.0.2",
   "wasmPath": "contracts/round-up-savings/target/wasm32v1-none/release/tabungpin_round_up_savings_contract.wasm",
-  "wasmSha256": "2f3232dd513adc71104a24ed4a7dcfbb7fb94d77e86ec4e0da637e70da1af184",
+  "wasmSha256": "6ccb1974a315d4c0474b69508fbbe762e303d0de202cf5ebd690553fbd6147d1",
   "asset": {
     "symbol": "XLM",
     "testnetSac": "CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCYSC",
