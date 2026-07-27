@@ -12,13 +12,14 @@
   "local": { "status": "tested", "testsPassed": 3, "flows": ["create -> deposit -> approve -> withdraw", "approval blocked before deposit", "cancel open batch"] },
   "testnet": { "status": "not-deployed", "contractId": null, "wasmUploadTxHash": null, "deploymentTxHash": null, "initializeTxHash": null },
   "mainnet": {
-    "status": "functional-create-batch",
+    "status": "functional-deposited",
     "contractId": "CCQZSEKMARQROHCEXTTM7KKAVCXENSJZ7U2MX3GET77TGK3UQBCKOH6R",
     "wasmUploadTxHash": "6ae8e019574e2b6a7c4d9248d23969a5f8f2eda60288be32d8497361d90cd3c5",
     "deploymentTxHash": "f56cc693528d636ff517867a27d6500191251014caddadf755e40d14ab27bdc5",
     "initializeTxHash": "4ece9af016f12ac70131b89e9039cc53f0b105ef458edf98ef2eba98755bf512",
     "functionalTxHashes": {
-      "createBatch": "92128a87072053284e62318509c7c88c47722ce06df3d353e68511b71b0fb15b"
+      "createBatch": "92128a87072053284e62318509c7c88c47722ce06df3d353e68511b71b0fb15b",
+      "depositBatch": "8297d0abcd2132147321468bfd77d2e5444994d918d30022adc921a626093eb9"
     },
     "functionalBatchId": "290291",
     "functionalBatchAmountXlm": "0.1"

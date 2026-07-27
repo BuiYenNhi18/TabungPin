@@ -18,8 +18,9 @@ Open the landing page, review the dashboard, then use **Konfirmasi Minggu Ini** 
 
 This repository has a live Soroban contract on Stellar mainnet. The verified deployment
 and initialization records are in [`contracts/round-up-savings/deployment.json`](contracts/round-up-savings/deployment.json).
-The first functional mainnet call created batch `290291` for `0.1 XLM`; its transaction
-is recorded in the same manifest. The public UI remains a lightweight `DEMO_MODE` demo,
+The first functional mainnet call created batch `290291` for `0.1 XLM`, and the next call
+deposited that amount into the contract; both transactions are recorded in the same manifest.
+The public UI remains a lightweight `DEMO_MODE` demo,
 while deposit, approval, and withdrawal are deliberately prepared as unsigned XDR for
 an external wallet signer.
 
