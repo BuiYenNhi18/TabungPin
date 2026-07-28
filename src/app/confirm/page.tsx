@@ -1,6 +1,5 @@
 import {
   ArrowRight,
-  CheckCircle,
   ChevronLeft,
   Coins,
   FileCode,
@@ -128,25 +127,6 @@ export default async function ConfirmPage() {
                   <span className="font-body text-gray-500">Network</span>
                   <span className="font-heading font-semibold text-gray-800">Stellar Testnet</span>
                 </div>
-              </div>
-            </div>
-
-            {/* XDR Preview */}
-            <div className="bg-gray-900 rounded-2xl p-5 mb-6 overflow-hidden">
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-gray-400 text-xs font-heading font-semibold uppercase tracking-wider">
-                  Transaction XDR Preview
-                </span>
-                <span className="text-green-400 text-xs font-body">Para ditandatangani</span>
-              </div>
-              <div
-                className="text-green-300 font-mono text-xs break-all leading-relaxed max-h-24 overflow-y-auto"
-                data-testid="xdr-preview"
-              >
-                {batch.xdr}
-              </div>
-              <div className="mt-3 text-gray-500 text-xs font-body">
-                XDR ini akan ditandatangani oleh Freighter / wallet Stellar Anda
               </div>
             </div>
 

@@ -8,6 +8,10 @@ The Vercel demo runs in `DEMO_MODE` with an in-memory TabungPin dataset: Andi Pr
 
 Open the landing page, review the dashboard, then use **Konfirmasi Minggu Ini** to preview and approve the simulated weekly batch deposit. Reference screenshots are included in [`screen-shot/`](screen-shot/).
 
+## Verified production deployment
+
+[https://029-round-up-batch-savings-weekly-approve-no-session-fut6nhfxa.vercel.app](https://029-round-up-batch-savings-weekly-approve-no-session-fut6nhfxa.vercel.app) — verified HTTP 200 after production deployment.
+
 ## Stellar surface
 
 - Soroban vault/policy boundary
