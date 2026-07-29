@@ -28,6 +28,9 @@ The public UI remains a lightweight `DEMO_MODE` demo,
 while deposit, approval, and withdrawal are deliberately prepared as unsigned XDR for
 an external wallet signer.
 
+- Mainnet contract: [`CCQZSEKMARQROHCEXTTM7KKAVCXENSJZ7U2MX3GET77TGK3UQBCKOH6R`](https://stellar.expert/explorer/public/contract/CCQZSEKMARQROHCEXTTM7KKAVCXENSJZ7U2MX3GET77TGK3UQBCKOH6R)
+- Latest verified `approve_batch`: [`1123b2d277192271598612fc5ca1bb1d603a27eeb39e01ed1d41b8d24cf06be7`](https://stellar.expert/explorer/public/tx/1123b2d277192271598612fc5ca1bb1d603a27eeb39e01ed1d41b8d24cf06be7)
+
 See [`docs/MAINNET_READINESS.md`](docs/MAINNET_READINESS.md).
 
 ## Local demo
