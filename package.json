@@ -23,6 +23,7 @@
     "db:push:ci": "dotenv -e .env.local -- drizzle-kit migrate",
     "db:studio": "drizzle-kit studio",
     "seed": "dotenv -e .env.local -- tsx scripts/seed-demo.ts",
+    "verify:deployment": "node scripts/verify-deployment.mjs",
     "demo": "npm run dev"
   },
   "dependencies": {
